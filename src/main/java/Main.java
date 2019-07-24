@@ -14,12 +14,12 @@ public class Main {
 
 
         //mais debug
-        while (true) {
-
-            letra.setLetra();
-
-            letra.printJaTentadas();
-        }
+//        while (true) {
+//
+//            letra.setLetra();
+//
+//            letra.printJaTentadas();
+//        }
 
 
 

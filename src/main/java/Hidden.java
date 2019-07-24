@@ -5,7 +5,7 @@ public class Hidden {
 //
 //    public void criaHidden(int tam){
 //
-//        this.hidden. = '_';
+//        this.hidden. = '_'; // problema aqui. n sei qual a função q me permite substituir um indice duma String
 //
 //        for (i = 1; i < tam; i++) {
 //
@@ -19,5 +19,5 @@ public class Hidden {
 //    public void printHidden(){
 //        System.out.println(hidden);
 //    }
-
-}
+//
+//}
