@@ -28,20 +28,24 @@ public class Palavra {
 
 
     public int checkLeter(char letra){
-        int[] a = new int[5];
+
+        int v; //vetor q guarda os indices onde foi encontrada a letra, mas num unico int. suponha q foi encontrada no i=0 e i=4 entao v = 40
+        int e;
+
+        e = 0;
+        v = 0;
 
         for (int i = 0; i < this.getTam(); i++) {
 
-            a[i] = 0;
-            if (this.palavra.chars().equals(letra)) { //esse comando n ta funcionando. era pra printar 00010 com a entrada porta
-                a[i] = i;
+            if (this.palavra.charAt(i) == letra) { 
+                v += i * Math.pow(10, e);
+                e++;
             }
-            System.out.println(a[i]);
 
 
         }
 
-        return 0;
+        return v;
     }
 
 
