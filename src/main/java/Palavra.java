@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Palavra {
+public class Palavra extends Hidden{
 
     private int tam;
     private String palavra;
@@ -8,7 +8,7 @@ public class Palavra {
     public void setPalavra(){
 
         Scanner scanner = new Scanner(System.in);
-        this.palavra = scanner.nextLine();
+        this.palavra = scanner.nextLine().toLowerCase();
         if (this.palavra.isEmpty()){
             System.out.println("Palavra invalida. tente novamente");
             this.setPalavra();

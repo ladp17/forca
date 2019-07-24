@@ -7,15 +7,19 @@ public class Main {
 
         palavra.setPalavra();
 
+        //debug
+//        palavra.criaHidden(palavra.getTam());
+//
+//        palavra.printHidden();
 
 
         //mais debug
-//        while (true) {
-//
-//            letra.setLetra();
-//
-//            letra.printJaTentadas();
-//        }
+        while (true) {
+
+            letra.setLetra();
+
+            letra.printJaTentadas();
+        }
 
 
 
