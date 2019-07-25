@@ -2,18 +2,22 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Palavra palavra = new Palavra();
+        Hidden palavra = new Hidden();
         Letra letra = new Letra();
 
         palavra.setPalavra();
 
         //debug
-//        palavra.criaHidden(palavra.getTam());
-//
-//        palavra.printHidden();
+        palavra.criaHidden();
+
+        palavra.preencheHidden('a');
+
+        palavra.printHidden();
 
 
         //mais debug
+
+
 //        while (true) {
 //
 //            letra.setLetra();

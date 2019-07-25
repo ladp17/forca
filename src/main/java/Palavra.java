@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Palavra extends Hidden{
+public class Palavra{
 
     private int tam;
     private String palavra;
@@ -21,6 +21,7 @@ public class Palavra extends Hidden{
         return this.palavra;
 
     }
+
 
     public int getTam(){
         return this.palavra.length();
