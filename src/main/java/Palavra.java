@@ -28,7 +28,7 @@ public class Palavra{
     }
 
 
-    public int checkLeter(char letra){
+    public int checkLeter(char letra){  // preciso trocar o tipo disso aqui da mt bo
 
         int v; //vetor q guarda os indices onde foi encontrada a letra, mas num unico int. suponha q foi encontrada no i=0 e i=4 entao v = 400. tem um 0 de guarda como primeiro digito para evitar problemas
         int e;

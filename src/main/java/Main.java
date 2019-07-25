@@ -1,18 +1,18 @@
 public class Main {
 
     public static void main(String[] args) {
+        Forca forca = new Forca();
 
-        Hidden palavra = new Hidden();
-        Letra letra = new Letra();
+        forca.start();
 
-        palavra.setPalavra();
+
 
         //debug
-        palavra.criaHidden();
-
-        palavra.preencheHidden('a');
-
-        palavra.printHidden();
+//        palavra.criaHidden();
+//
+//        palavra.preencheHidden('a');
+//
+//        palavra.printHidden();
 
 
         //mais debug

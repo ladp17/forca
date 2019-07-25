@@ -26,9 +26,9 @@ public class Hidden extends Palavra{
 
         StringBuilder s = new StringBuilder(this.hidden);
 
-        if (v == 0){             //confere se a letra foi encontrada alguma vez na palavra. senao retorna false.
+        if (v == 0){             //confere se a letra foi encontrada alguma vez na palavra. senao retorna true.
 
-            return false;
+            return true;
         }
 
 
@@ -44,7 +44,22 @@ public class Hidden extends Palavra{
 
         this.hidden = s.toString();
 
-        return true;
+        return false;
+    }
+
+    public boolean checkLeft(){
+
+
+        for (int i = 0; i < this.getTam(); i++) {
+
+            if (this.hidden.charAt(i) == '_') {
+                return true;
+            }
+
+
+        }
+
+        return false;
     }
 
     public void printHidden()
