@@ -1,13 +1,21 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Forca {
 
 
     public void printForca(int i) {
-        int tamforca = 0; //tamanho de vforca
+        int tamforca = 5; //tamanho de vforca
+        List<String> vforca= new ArrayList<String>();
 
-        if (i <= tamforca) {
+        if (i < tamforca) {
 
-            // lista com as strings de forca: private (n sei o tipo) vforca;
-            // System.out.println(vforca[i]);
+            vforca.add("");
+            vforca.add("");
+            vforca.add("");
+            vforca.add("");
+            vforca.add("");
+            System.out.println(vforca.get(i));
 
         }
 

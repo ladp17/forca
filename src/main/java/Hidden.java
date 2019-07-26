@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Hidden extends Palavra{
 
     private String hidden;
@@ -20,13 +23,13 @@ public class Hidden extends Palavra{
     }
 
     public boolean preencheHidden(char letra){
-        int ofset;
+        List<Integer> v= new ArrayList<Integer>();
 
-        int v = this.checkLeter(letra);
+         v = this.checkLeter(letra);
 
         StringBuilder s = new StringBuilder(this.hidden);
 
-        if (v == 0){             //confere se a letra foi encontrada alguma vez na palavra. senao retorna true.
+        if (v.isEmpty()){             //confere se a letra foi encontrada alguma vez na palavra. senao retorna true.
 
             return true;
         }
@@ -34,11 +37,9 @@ public class Hidden extends Palavra{
 
 
 
-        for (v /= 10 ; v > 0; v /= 10){           //substiu a letra no lugar correto
+        for (Integer i : v){           //substiu a letra no lugar correto
 
-            ofset = (v % 10) * 2;
-
-            s.setCharAt(ofset, letra);
+            s.setCharAt(i*2, letra);
 
         }
 
@@ -49,10 +50,9 @@ public class Hidden extends Palavra{
 
     public boolean checkLeft(){
 
-
         for (int i = 0; i < this.getTam(); i++) {
 
-            if (this.hidden.charAt(i) == '_') {
+            if (this.hidden.charAt(i*2) == '_') {
                 return true;
             }
 
